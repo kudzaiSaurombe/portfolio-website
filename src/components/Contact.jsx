@@ -26,15 +26,17 @@ const Contact = () => {
             [name]: value,
         });
     };
-
+//
+//
+//
     const handleSubmit = (e) => {
         e.preventDefault();
         setLoading(true);
 
         emailjs
             .send(
-                import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-                import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+                'service_sag9its',
+                'template_txrp48h',
                 {
                     from_name: form.name,
                     to_name: "Kudzai Saurombe",
@@ -42,12 +44,12 @@ const Contact = () => {
                     to_email: "remasterd06@gmail.com",
                     message: form.message,
                 },
-                import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+                'iwEYQU-AH6vLqgmC3'
             )
             .then(
                 () => {
                     setLoading(false);
-                    alert("Thank you. I will get back to you as soon as possible.");
+                    alert("Thanks, I will get back to you as soon :) .");
 
                     setForm({
                         name: "",
@@ -71,7 +73,7 @@ const Contact = () => {
                 className='flex-[0.75] bg-white dark:bg-black-100 p-8 rounded-2xl'
             >
                 <p className={`${styles.sectionSubText} text-black dark:text-white`}>Get in touch</p>
-                <h3 className={`${styles.sectionHeadText} text-black-200 dark:text-white`}>Contact.</h3>
+                <h3 className={`${styles.sectionHeadText} text-black-100 dark:text-white`}>Contact.</h3>
 
                 <form
                     ref={formRef}

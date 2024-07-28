@@ -187,9 +187,13 @@ const projects = [
                 name: "matplotlib",
                 color: "pink-text-gradient",
             },
+            {
+                name: "jupyter",
+                color: "blue-text-gradient",
+            },
         ],
         image: logisticregression,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/kudzaiSaurombe06/Company-retention-logistic-regression",
     },
     {
         name: "Stock price Predictor",
@@ -208,9 +212,13 @@ const projects = [
                 name: "pandas",
                 color: "pink-text-gradient",
             },
+            {
+                name: "jupyter",
+                color: "blue-text-gradient",
+            },
         ],
         image: stockpredict,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/kudzaiSaurombe06/AAPL-LSTM-Predictor/tree/main",
     },
     {
         name: "ecommerce web app",
@@ -231,7 +239,7 @@ const projects = [
             },
         ],
         image: goonmart,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/GoonMart-Goons/GoonMart-Online-Store",
     },
     {
         name: "Dynamic Programming learning tool",
@@ -252,7 +260,7 @@ const projects = [
             },
         ],
         image: dynamicprogramming,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/GoonMart-Goons/Dynamic-Programming-Tool",
     },
 ];
 export { services, technologies, experiences, projects };
