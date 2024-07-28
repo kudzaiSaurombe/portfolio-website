@@ -9,7 +9,21 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+body {
+  transition: background-color 0.3s ease;
+}
+/* Add transitions to common elements */
+h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
+  transition: color 0.3s ease;
+}
+
+/* Add transitions to specific classes if needed */
+.bg-primary, .bg-secondary, .bg-tertiary, .text-primary, .text-secondary {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
@@ -58,7 +72,7 @@
   -webkit-text-fill-color: transparent;
 }
 .green-text-gradient {
-  background: #11998e; /* fallback for old browsers */
+  background: #11998e;
   background: -webkit-linear-gradient(
           to top,
           #11998e,

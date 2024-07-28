@@ -10,9 +10,36 @@ const Computers = ({ isMobile, scrollY }) => {
 
     useEffect(() => {
         if (actions["Animation"]) {
-            actions["Animation"].play().setLoop(THREE.LoopRepeat, Infinity);
+            const action = actions["Animation"];
+            action.setLoop(THREE.LoopRepeat, Infinity);
+            action.play();
+
+            const clip = animations[0];
+            const duration = 7.25; // Duration to play in seconds
+            const startTime = 4.9;
+            const endTime = Math.min(duration, clip.duration);
+
+            mixer.addEventListener('loop', (e) => {
+                if (e.action === action) {
+                    e.action.time = startTime;
+                }
+            });
+
+            mixer.addEventListener('finished', (e) => {
+                if (e.action === action) {
+                    e.action.reset().play();
+                }
+            });
+
+            const originalUpdate = mixer.update.bind(mixer);
+            mixer.update = (delta) => {
+                if (action.time > endTime) {
+                    action.time = startTime;
+                }
+                originalUpdate(delta);
+            };
         }
-    }, [actions]);
+    }, [actions, mixer, animations]);
 
     useFrame((state, delta) => {
         if (mixer) {
@@ -46,7 +73,6 @@ const Computers = ({ isMobile, scrollY }) => {
         </group>
     );
 };
-
 
 const ComputersCanvas = () => {
     const [isMobile, setIsMobile] = useState(false);

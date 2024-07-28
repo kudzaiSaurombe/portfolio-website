@@ -15,6 +15,7 @@
     "@react-three/fiber": "^8.13.6",
     "dat.gui": "^0.7.9",
     "framer-motion": "^10.15.0",
+    "lucide-react": "^0.414.0",
     "maath": "^0.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

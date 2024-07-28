@@ -2,7 +2,7 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   mode: "jit",
-  darkMode: 'class', // Enable class-based dark mode
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -12,9 +12,8 @@ module.exports = {
         "black-100": "#090523",
         "black-200": "#090325",
         "white-100": "#f3f3f3",
-        // Define light mode colors
         "light-primary": "#f3f3f3",
-        "light-secondary": "#9d9ab4",
+        "light-secondary": "#f8f8fa",
         "light-tertiary": "#e0e0e0",
         "light-black-100": "#ffffff",
         "light-black-200": "#f5f5f5",
@@ -28,6 +27,12 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
+      },
+      transitionProperty: {
+        'colors': 'background-color, border-color, color, fill, stroke',
+      },
+      transitionDuration: {
+        '300': '300ms',
       },
     },
   },

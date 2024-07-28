@@ -40,8 +40,12 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import stockpredict from "./stockpredict.png";
+import goonmart from "./goonmart.png";
+import dynamicprogramming from "./dynamicprogramming.png";
+
+
+import logisticregression from "./logisticregression.png";
 
 export {
   logo,
@@ -70,8 +74,10 @@ export {
   starbucks,
   tesla,
   carrent,
-  jobit,
-  tripguide,
+  dynamicprogramming,
+  stockpredict,
+  goonmart,
+  logisticregression,
   cpp,
   java,
   wits,

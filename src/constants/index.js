@@ -12,13 +12,11 @@ import {
     tailwind,
     nodejs,
     git,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
-    jobit,
-    tripguide,
+    dynamicprogramming,
+    stockpredict,
+    goonmart,
+    logisticregression,
     threejs,
     sql,
     wits,
@@ -60,7 +58,7 @@ const services = [
         icon: backend,
     },
     {
-        title: "Mobile Developer",
+        title: "Data Scientist",
         icon: creator,
     },
 ];
@@ -173,66 +171,87 @@ const experiences = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Employee retention",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "An Analysis of Employee Retention Using Regression Techniques.",
+        tags: [
+            {
+                name: "pandas",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "sklearn",
+                color: "green-text-gradient",
+            },
+            {
+                name: "matplotlib",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: logisticregression,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "Stock price Predictor",
+        description:
+            "A data project using an LSTM to predict the closing stock price for AAPL from historical stock price data of Apple Inc. using the yfinance library.",
+        tags: [
+            {
+                name: "Python",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Keras",
+                color: "green-text-gradient",
+            },
+            {
+                name: "pandas",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: stockpredict,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "ecommerce web app",
+        description:
+            "Web application that enables users to shop various products online.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "JS",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "Firebase",
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
+        image: goonmart,
         source_code_link: "https://github.com/",
     },
     {
-        name: "Job IT",
+        name: "Dynamic Programming learning tool",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "A dynamic programming web application that can be used by students who want to learn and practice the dynamic programming algorithms with unlimited questions and ability to keep their progress.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "firebase",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "CSS",
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "Trip Guide",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-        tags: [
-            {
-                name: "nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "supabase",
-                color: "green-text-gradient",
-            },
-            {
-                name: "css",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: tripguide,
+        image: dynamicprogramming,
         source_code_link: "https://github.com/",
     },
 ];

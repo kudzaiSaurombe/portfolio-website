@@ -47,7 +47,7 @@ const Contact = () => {
             .then(
                 () => {
                     setLoading(false);
-                    alert("Thanks. I will get back to you as soon as possible.");
+                    alert("Thank you. I will get back to you as soon as possible.");
 
                     setForm({
                         name: "",
@@ -71,7 +71,7 @@ const Contact = () => {
                 className='flex-[0.75] bg-white dark:bg-black-100 p-8 rounded-2xl'
             >
                 <p className={`${styles.sectionSubText} text-black dark:text-white`}>Get in touch</p>
-                <h3 className={`${styles.sectionHeadText} text-black dark:text-white`}>Contact.</h3>
+                <h3 className={`${styles.sectionHeadText} text-black-200 dark:text-white`}>Contact.</h3>
 
                 <form
                     ref={formRef}
